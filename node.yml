@@ -1,0 +1,12 @@
+---
+hostname: vmtemplate1
+box: http://file-server/sharefolder/ohara/baseimage/commondev-CentOS7.3-BaseVM.box
+memory: 4096
+cpus: 2
+username: root
+password: vagrant
+network:
+   identifier: public_network
+   ip: 10.1.3.243
+   netmask: "255.0.0.0"
+   bridge: "enp8s0"
