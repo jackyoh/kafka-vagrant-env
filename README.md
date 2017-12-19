@@ -22,3 +22,10 @@
 ```
 # /opt/confluent-4.0.0/bin/kafka-console-consumer --zookeeper localhost:2181 --topic=test-connect --from-beginning
 ```
+
+**Kafka Consumer**
+```
+./kafka-console-consumer --zookeeper localhost:2181 --topic connect-test --from-beginning --consumer.config /home/user1/consumer.properties 
+
+./kafka-consumer-groups --zookeeper localhost:2181 --describe --group group1
+```
