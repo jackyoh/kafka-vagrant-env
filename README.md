@@ -29,3 +29,8 @@
 
 ./kafka-consumer-groups --zookeeper localhost:2181 --describe --group group1
 ```
+
+**Show Kafka Offset Topic Command**
+```
+ ./kafka-console-consumer --topic __consumer_offsets --bootstrap-server 10.1.3.243:9092 --formatter "kafka.coordinator.group.GroupMetadataManager\$OffsetsMessageFormatter" --from-beginning
+```
